@@ -6,6 +6,10 @@ Secondary option 2 (grey): #ebeae8;
 Text and buttons (dark grey): #4f4f4f;
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
@@ -14,6 +18,25 @@ body{
     line-height: 1.4;
     color: #383838;
 }
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.6);
+    - moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.6);
+    box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.6);
+}
+
+main {
+    padding-top: 133px;
+}
+
 h1, h2, h3, h4 {
     line-height: 1.4;
 }
@@ -69,3 +92,57 @@ a:active {
 }
 
 .button:visited { color: white;}
+
+/* Layout styling */
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+nav > ul > li > a:visited {
+    color: #818181;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: white;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#hero h1 {
+    text-align: center;
+}
+
+#hero p {
+    text-align: center;
+}
+
+#aboutme h1 {
+    text-align: center;
+}
