@@ -21,6 +21,8 @@ body{
 
 img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -84,11 +86,14 @@ a:active {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    transition-duration: 0.2s;
+    transition-property: opacity;
 }
 .button:hover,
 .button:active {
     background-color: #000000;
     text-decoration: none;
+    opacity: 0.8;
 }
 
 .button:visited { color: white;}
@@ -153,7 +158,8 @@ nav > ul > li > a:visited {
     text-align: center;
 }
 
-#aboutme h1 {
+#aboutme h1,
+#aboutme p {
     text-align: center;
 }
 
@@ -162,6 +168,10 @@ nav > ul > li > a:visited {
 }
 
 #myprojects h2 {
+    text-align: center;
+}
+
+#myskills h2 {
     text-align: center;
 }
 
@@ -179,11 +189,63 @@ nav > ul > li > a:visited {
     }
     .col-md-6 {
         width: 50%;
+        padding: 10px;
     }
 }
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0, 50px);}
+    to {transform: translate(200px, 50px);}
+}
+
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px, 48px);}
+    to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+    animation-duration: 34s;
+    animation-name: cloud-move-reverse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
 /* Large devices (1024px or larger)*/
 @media only screen and (min-width: 1024px) {
-
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /* X-Large devices (1440px or larger)*/
 @media only screen and (mid-width: 1440px) {
