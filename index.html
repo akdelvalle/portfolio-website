@@ -23,13 +23,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my portfolio</title>
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container" style="inline-block;width: 100%;">
+            <div class="logo-wrapper" style="display: inline-block;"></div>
+
             <img class="logo" src="img/logo-name copy.svg" alt="Anna Del Valle">
-            <nav>
+            <nav style="inline-block; padding: 15px 0;">
                 <ul>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
@@ -46,17 +49,21 @@
             <p>I'm passionate about minimal and clean design. I believe in implementing simple solutions while
                 prioritizing the best possible visual design of any product I'm working on.</p>
         </div>
-        </div>
         <div id="myprojects">
             <h2>My Projects</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-7">
+                    <div class="imgWrapper">
                     <picture>
                         <source srcset="img/modern-home-images/modern-home@1x.jpg" media="(max-width:767px)">
                         <img src="img/modern-home-images/modern-home@1x.jpg" alt="My Image">
                     </picture>
                 </div>
+                </div>
                 <div class="col-md-6 col-lg-5">
+                    <div class="descWrapper">
+
+
                     <h3>Modern Home</h3>
                     <p>Modern Home is an E-commerce web application for modern furniture and home decor. Modern Home
                         takes a
@@ -64,26 +71,35 @@
                     </p>
                     <a href="modernhome.html" class="button">Read More</a>
                 </div>
+                </div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6 col-lg-7">
+                <div class="imgWrapper">
                 <picture>
                     <source srcset="img/connect-images/connect@1x.jpg" media="(max-width:767px)">
                     <img src="img/connect-images/connect@1x.jpg" alt="My Image">
                 </picture>
             </div>
+            </div>
             <div class="col-md-6 col-lg-5">
+                <div class="descWrapper">
+
+
                 <h3>Connect</h3>
                 <p>Connect is an activity generator app for families. Connect encourages parents and their children
                     to spend
                     quality time together away from technology with fun and interactive activities. </p>
                 <a href="" class="button">Read More</a>
             </div>
+            </div>
+            </div>
 
             <div class="row">
                 <div class="col-md-6 col-lg-7">
+                    <div class="imgWrapper">
                     <picture>
                         <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration"
                             height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1535,13 +1551,18 @@
                         </svg>
                     </picture>
                 </div>
+                </div>
                 <div class="col-md-6 col-lg-5">
+                    <div class="descWrapper">
+
+
                     <h3>CSS Animation Example</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. </p>
                     <a href="" class="button">Read More</a>
                 </div>
-
+                </div>
+                </div>
     </main>
     <footer>
         <div class="container">
