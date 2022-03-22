@@ -31,7 +31,7 @@ header {
     padding: 10px 0;
     position: relative;
     -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.6);
-    - moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.6);
+    -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.6);
     box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.6);
 }
 
@@ -175,6 +175,9 @@ nav > ul > li > a:visited {
     text-align: center;
 }
 
+[class*="col-"] {
+    float: left;
+}
 
 /* Medium devices (640px and larger)*/
 @media only screen and (min-width: 640px) {
@@ -189,7 +192,6 @@ nav > ul > li > a:visited {
     }
     .col-md-6 {
         width: 50%;
-        padding: 10px;
     }
 }
 
@@ -252,7 +254,15 @@ nav > ul > li > a:visited {
 
 }
 
-[class*="col-"] {
-    float: left;
+
+.centerme {
+    text-align: center;
 }
 
+.descWrapper {
+    padding: 10px;
+}
+
+.imgWrapper {
+    padding: 10px;
+}
