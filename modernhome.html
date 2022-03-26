@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <script src="https://kit.fontawesome.com/c936a33124.js" crossorigin="anonymous"></script>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_package_v0/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_package_v0/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_package_v0/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/c936a33124.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_package_v0/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_package_v0/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_package_v0/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header>
-            <div>
-                <img class="logo"
-                src="img/logo-name copy.svg" alt="Anna Del Valle">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <div class="logo-wrapper">
+                    <img class="logo" src="img/logo-name copy.svg" alt="Anna Del Valle">
+                </div>
                 <nav>
                     <ul>
                         <li><a href="index.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
                     </ul>
                 </nav>
             </div>
-        </header>
-        <main id="ecom-project">
+        </div>
+    </header>
+    <main id="ecom-project">
+        <div>
+            <picture>
+                <source srcset="img/modern-home-case-study.png">
+                <img src="img/modern-home-case-study.png" alt="Case Study">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h2>Contact Me</h2>
+            <p>Do you like my work and want to discuss opportunities? Please send me an email!</p>
             <div>
-                <picture>
-                    <source srcset="img/modern-home-case-study.png">
-                    <img src="img/modern-home-case-study.png" alt="Case Study">
-                </picture>
+                <a href="mailto:anna.gdelvalle@gmail.com" class="button"> Email Me</a>
             </div>
-        </main>
-        <footer>
             <div>
-                <h2>Contact Me</h2>
-                <p>Do you like my work and want to discuss opportunities? Please send me an email!</p>
-                <div>
-                    <a href="mailto:anna.gdelvalle@gmail.com" class="button"> Email Me</a>
-                </div>
-                <div>
-                    <ul>
-                        <li> <a href="linkedin-url" target="_blank">
+                <ul>
+                    <li> <a href="linkedin-url" target="_blank">
                             <i class="fa-brands fa-linkedin"></i>
                         </a></li>
-                        <li> <a href="behance-url" target="_blank">
+                    <li> <a href="behance-url" target="_blank">
                             <i class="fa-brands fa-behance-square"></i>
                         </a></li>
-                    </ul>
-                </div>
-                <p>Copyright Anna Del Valle 2022</p>
+                </ul>
             </div>
-        </footer>
-    </body>
+            <p>Copyright Anna Del Valle 2022</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
