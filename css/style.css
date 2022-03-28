@@ -27,6 +27,7 @@ img {
 
 header {
     background-color: white;
+    text-align: center;
     padding: 10px 0 4px;
     position: relative;
     -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.6);
@@ -35,7 +36,7 @@ header {
 }
 
 main {
-    padding-top: 56px;
+    padding-top: 0px;
 }
 
 h1, h2, h3, h4 {
@@ -75,6 +76,7 @@ a:active {
     color: #000000;
     text-decoration: none;
 }
+
 
 .button {
     display: inline-block;
@@ -117,7 +119,10 @@ a:active {
 }
 
 .logo {
-    max-width: 250px;
+    max-width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2.5em;
 }
 
 .logo-wrapper {
@@ -132,16 +137,18 @@ nav > ul {
 }
 
 nav > ul > li > a {
+    display: inline-block;
     padding: 0 15px;
+    color: #000000;
     text-transform: uppercase;
-    font-weight: 700;
-    color: #4a4a4a;
+    text-decoration: none;
 }
 
 nav > ul > li > a:visited {
     color: #818181;
     text-decoration: none;
 }
+
 
 #hero {
     background-color: white;
@@ -207,7 +214,7 @@ nav > ul > li > a:visited {
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid #ebeae8;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -215,11 +222,15 @@ nav > ul > li > a:visited {
 }
 
 
-/* Medium devices (640px and larger)*/
-@media only screen and (min-width: 640px) {
+/* Medium devices (641px and larger)*/
+@media only screen and (min-width: 641px) {
     header {
         text-align: unset;
         padding: 20px 0 13px;
+    }
+
+    .col-md-6 {
+        width: 50%;
     }
 
     nav {
@@ -231,12 +242,8 @@ nav > ul > li > a:visited {
         margin: 1em 0;
     }
 
-    .col-md-6 {
-        width: 50%;
-    }
-
     nav > ul > li {
-        display: inline-block;
+    display: inline-block;
     }
 
     .navtoggle li:not(:last-child) {
