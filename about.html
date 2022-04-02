@@ -49,11 +49,12 @@
     </header>
     <main class="container">
         <div>
-            <div>
+            <div class="center-objects">
                 <picture>
                     <source srcset="img/img-me.png" media="(max-width:767px)">
                     <img src="img/img-me.png" alt="My Photo">
                 </picture>
+            </div>
                 <div id="aboutme">
                     <h1>A little bit about me!</h1>
                     <div>
@@ -83,6 +84,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
+                                <div class="descWrapper">
                                 <h3>Skills</h3>
                                 <ul>
                                     <li>UI Design</li>
@@ -97,9 +99,10 @@
                                     <li>Usability Testing</li>
                                 </ul>
                             </div>
-
+                        </div>
                             <div class="row">
                                 <div class="col-md-6">
+                                    <div class="descWrapper">
                                     <h3>Tools</h3>
                                     <ul>
                                         <li>Figma</li>
@@ -115,24 +118,27 @@
     </main>
 
 
-    <footer>
+    <footer id="contact">
         <div class="container">
-            <h2 id="contact">Contact Me</h2>
-            <p>Do you like my work and want to discuss opportunities? Please send me an email!</p>
-            <div>
+            <div class="descWrapper">
+            <h2 class="center-text">Contact Me</h2>
+            <p class="center-text">Do you like my work and want to discuss opportunities? 
+                <br> Send me an email!</p>
+            <div class="center-objects">
                 <a href="mailto:anna.gdelvalle@gmail.com" class="button"> Email Me</a>
             </div>
-            <div>
-                <ul>
-                    <li> <a href="linkedin-url" target="_blank">
+        </div>
+            <div class="center-objects" id="socialicons">
+                <ul class="list-inline">
+                    <li class="social-icons"> <a href="linkedin-url" target="_blank">
                             <i class="fa-brands fa-linkedin"></i>
                         </a></li>
-                    <li> <a href="behance-url" target="_blank">
+                    <li class="social-icons"> <a href="behance-url" target="_blank">
                             <i class="fa-brands fa-behance-square"></i>
                         </a></li>
                 </ul>
             </div>
-            <p>Copyright Anna Del Valle 2022</p>
+            <p class="center-text">Copyright Anna Del Valle 2022</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
