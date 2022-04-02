@@ -4,6 +4,7 @@ Primary (white): #ffffff;
 Secondary option 1 (tan): #efebe5;
 Secondary option 2 (grey): #ebeae8;
 Text and buttons (dark grey): #4f4f4f;
+background-color: rgba(176, 196, 204, 0.397)?
 */
 
 * {
@@ -12,11 +13,11 @@ Text and buttons (dark grey): #4f4f4f;
 
 body{
     background-color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Tenor Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
-    color: #383838;
+    color: #4f4f4f;
 }
 
 img {
@@ -25,14 +26,17 @@ img {
     height: auto;
 }
 
+
 header {
     background-color: white;
     text-align: center;
     padding: 10px 0 4px;
     position: relative;
-    -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.6);
-    -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.6);
-    box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.6);
+    border-bottom: 1px solid #505577;
+}
+span {
+    font-size: 0.75em;
+    font-weight: 100;
 }
 
 main {
@@ -44,15 +48,16 @@ h1, h2, h3, h4 {
 }
 h1 {
     font-size: 2.00em;
-    font-weight: 400;
+    font-weight: 300;
 }
 h2 {
     font-size: 1.75em;
-    font-weight: 400;
+    font-weight: 300;
+    padding-top: 60px;
 }
 h3 {
-    font-size: 1.25em;
-    font-weight: 400;
+    font-size: 1.50em;
+    font-weight: 300;
 }
 h4 {
     font-size: 1.25em;
@@ -60,12 +65,12 @@ h4 {
 }
 
 a {
-    color:#383838;
+    color:#505577;
     text-decoration: none;
 }
 a :hover,
 a :focus {
-    color: #000000;
+    color: #505577;
     text-decoration: none;
 }
 a:visited {
@@ -77,14 +82,14 @@ a:active {
     text-decoration: none;
 }
 
-
 .button {
     display: inline-block;
-    background-color: #383838;
+    background-color: #505577;
     color: white;
-    font-weight: 400;
-    padding: 15px 32px;
+    font-weight: 200;
+    padding: 8px 25px;
     text-align: center;
+    border-radius: 3px;
     text-decoration: none;
     font-size: 16px;
     transition-duration: 0.2s;
@@ -92,7 +97,7 @@ a:active {
 }
 .button:hover,
 .button:active {
-    background-color: #000000;
+    background-color: #505577;
     text-decoration: none;
     opacity: 0.8;
 }
@@ -100,6 +105,7 @@ a:active {
 .button:visited { 
     color: white;
 }
+
 
 /* Layout styling */
 
@@ -145,17 +151,21 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:visited {
-    color: #818181;
+    color: #505577;
     text-decoration: none;
 }
 
+nav > ul > li > a:hover {
+    color: #505577;
+    text-decoration: underline;
+}
 
 #hero {
-    background-color: white;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid #505577;
 }
 
 #hero span {
@@ -173,7 +183,9 @@ nav > ul > li > a:visited {
 #aboutme h1,
 #aboutme p {
     text-align: center;
+    padding-top: 20px;
 }
+
 
 #ecom-project {
     padding-top: 0px;
@@ -183,9 +195,18 @@ nav > ul > li > a:visited {
     text-align: center;
 }
 
+#myprojects {
+    background-color: white;
+}
+
 #myskills h2 {
     text-align: center;
 }
+
+#contact {
+    border-top: 1px solid #505577;
+}
+
 
 [class*="col-"] {
     float: left;
@@ -214,11 +235,35 @@ nav > ul > li > a:visited {
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid rgba(255, 127, 80, 0.5);
+    border-top: 1px solid #505577;
 }
 
 .navtoggle.responsive li:last-child {
     padding: 0 0 10px;
+}
+
+/* footer/contact styling */
+
+.center-text {
+    text-align: center;
+}
+.center-objects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.social-icons:hover {
+    opacity: 0.8;
+}
+
+.list-inline { 
+padding-left: 0;
+list-style: none;
+}
+.list-inline > li {
+    display: inline-block;
 }
 
 
@@ -277,6 +322,7 @@ nav > ul > li > a:visited {
 
 .centerme {
     text-align: center;
+    padding-top: 20px;
 }
 
 .descWrapper {
