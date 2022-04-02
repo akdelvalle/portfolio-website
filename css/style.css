@@ -1,17 +1,15 @@
 /* 
 Colors used:
-Primary (white): #ffffff;
-Secondary option 1 (tan): #efebe5;
-Secondary option 2 (grey): #ebeae8;
-Text and buttons (dark grey): #4f4f4f;
-background-color: rgba(176, 196, 204, 0.397)?
+Background (white): #ffffff;
+Text (dark grey): #4f4f4f;
+button color: #505577
 */
 
 * {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: white;
     font-family: 'Tenor Sans', sans-serif;
     font-size: 16px;
@@ -34,6 +32,7 @@ header {
     position: relative;
     border-bottom: 1px solid #505577;
 }
+
 span {
     font-size: 0.75em;
     font-weight: 100;
@@ -46,37 +45,44 @@ main {
 h1, h2, h3, h4 {
     line-height: 1.4;
 }
+
 h1 {
     font-size: 2.00em;
     font-weight: 300;
 }
+
 h2 {
     font-size: 1.75em;
     font-weight: 300;
     padding-top: 60px;
 }
+
 h3 {
     font-size: 1.50em;
     font-weight: 300;
 }
+
 h4 {
     font-size: 1.25em;
     font-weight: 300;
 }
 
 a {
-    color:#505577;
+    color: #505577;
     text-decoration: none;
 }
+
 a :hover,
 a :focus {
     color: #505577;
     text-decoration: none;
 }
+
 a:visited {
     color: #5a5a5a;
     text-decoration: none;
 }
+
 a:active {
     color: #000000;
     text-decoration: none;
@@ -95,6 +101,7 @@ a:active {
     transition-duration: 0.2s;
     transition-property: opacity;
 }
+
 .button:hover,
 .button:active {
     background-color: #505577;
@@ -102,7 +109,7 @@ a:active {
     opacity: 0.8;
 }
 
-.button:visited { 
+.button:visited {
     color: white;
 }
 
@@ -118,6 +125,7 @@ a:active {
 .row {
     margin: 25px 0;
 }
+
 .row::after {
     content: "";
     clear: both;
@@ -136,13 +144,13 @@ a:active {
     padding: 20px;
 }
 
-nav > ul {
+nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
     display: inline-block;
     padding: 0 15px;
     color: #000000;
@@ -150,12 +158,12 @@ nav > ul > li > a {
     text-decoration: none;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
     color: #505577;
     text-decoration: none;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
     color: #505577;
     text-decoration: underline;
 }
@@ -223,7 +231,7 @@ nav > ul > li > a:hover {
     font-size: 20px;
 }
 
-.navtoggle, 
+.navtoggle,
 .navtoggle.responsive {
     position: relative;
 }
@@ -247,6 +255,7 @@ nav > ul > li > a:hover {
 .center-text {
     text-align: center;
 }
+
 .center-objects {
     display: flex;
     justify-content: center;
@@ -258,11 +267,12 @@ nav > ul > li > a:hover {
     opacity: 0.8;
 }
 
-.list-inline { 
-padding-left: 0;
-list-style: none;
+.list-inline {
+    padding-left: 0;
+    list-style: none;
 }
-.list-inline > li {
+
+.list-inline>li {
     display: inline-block;
 }
 
@@ -283,12 +293,13 @@ list-style: none;
         float: right;
         margin-top: 4px;
     }
-    nav > ul {
+
+    nav>ul {
         margin: 1em 0;
     }
 
-    nav > ul > li {
-    display: inline-block;
+    nav>ul>li {
+        display: inline-block;
     }
 
     .navtoggle li:not(:last-child) {
@@ -305,19 +316,20 @@ list-style: none;
     .col-lg-7 {
         width: 58.33%;
     }
+
     .col-lg-5 {
         width: 41.66%;
     }
+
     .container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
 }
-/* X-Large devices (1440px or larger)*/
-@media only screen and (min-width: 1440px) {
 
-}
+/* X-Large devices (1440px or larger)*/
+@media only screen and (min-width: 1440px) {}
 
 
 .centerme {
@@ -337,10 +349,21 @@ list-style: none;
 /* palm tree animation*/
 
 
-.st0v {fill:#27aae1;}
-.st1v {fill:#f26d79;}
-.st2v {fill:#fbb040;}
-.st3v {fill:#46a480;}
+.st0v {
+    fill: #27aae1;
+}
+
+.st1v {
+    fill: #f26d79;
+}
+
+.st2v {
+    fill: #fbb040;
+}
+
+.st3v {
+    fill: #46a480;
+}
 
 .st0 {
     animation-duration: 4s;
@@ -351,14 +374,15 @@ list-style: none;
 }
 
 @keyframes color-change {
-    0% {fill: #27aae1;
+    0% {
+        fill: #27aae1;
     }
-    50% {fill: #2b74a5;
+
+    50% {
+        fill: #2b74a5;
     }
-    100% {fill: #29488a;
+
+    100% {
+        fill: #29488a;
     }
 }
-
-
-
-
