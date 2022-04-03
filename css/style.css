@@ -54,7 +54,7 @@ h1 {
 h2 {
     font-size: 1.75em;
     font-weight: 300;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 h3 {
@@ -144,6 +144,11 @@ a:active {
     padding: 20px;
 }
 
+.imgWrapper svg {
+    width: 100%;
+}
+
+
 nav>ul {
     list-style-type: none;
     padding: 0;
@@ -169,7 +174,7 @@ nav>ul>li>a:hover {
 }
 
 #hero {
-    padding: 20px 0;
+    padding: 20px;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -276,6 +281,10 @@ nav>ul>li>a:hover {
     display: inline-block;
 }
 
+.fa-brands {
+    font-size: 40px;
+    padding: 10px;
+}
 
 /* Medium devices (641px and larger)*/
 @media only screen and (min-width: 641px) {
