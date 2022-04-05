@@ -37,9 +37,14 @@
                     <ul>
                         <li><a href="index.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
+                        <li><a href="files/delvalle-anna-resume.pdf" target="_blank">Resume</a></li>
                         <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fas fa-bars"></i></a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <i class="fas fa-bars" aria-hidden="true">
+                                </i>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -53,24 +58,28 @@
             </picture>
         </div>
     </main>
-    <footer>
-        <div>
-            <h2>Contact Me</h2>
-            <p>Do you like my work and want to discuss opportunities? Please send me an email!</p>
-            <div>
-                <a href="mailto:anna.gdelvalle@gmail.com" class="button"> Email Me</a>
+    <footer id="contact">
+        <div class="container">
+            <div class="descWrapper">
+                <h2 class="center-text">Contact Me</h2>
+                <p class="center-text">Do you like my work and want to discuss opportunities?
+                    <br> Send me an email!
+                </p>
+                <div class="center-objects">
+                    <a href="mailto:anna.gdelvalle@gmail.com" class="button"> Email Me</a>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li> <a href="linkedin-url" target="_blank">
+            <div class="center-objects" id="socialicons">
+                <ul class="list-inline">
+                    <li class="social-icons"> <a href="linkedin-url" target="_blank">
                             <i class="fa-brands fa-linkedin"></i>
                         </a></li>
-                    <li> <a href="behance-url" target="_blank">
+                    <li class="social-icons"> <a href="behance-url" target="_blank">
                             <i class="fa-brands fa-behance-square"></i>
                         </a></li>
                 </ul>
             </div>
-            <p>Copyright Anna Del Valle 2022</p>
+            <p class="center-text">Copyright Anna Del Valle 2022</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
